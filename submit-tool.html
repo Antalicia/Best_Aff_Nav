@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>提交工具 - BestAffiliate</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <header>
+        <!-- 复用主header -->
+    </header>
+
+    <div class="sidebar">
+        <!-- 复用主侧边栏 -->
+    </div>
+
+    <div class="main-content">
+        <div class="form-container">
+            <h1>提交新工具</h1>
+            <form id="tool-submission-form">
+                <div class="form-group">
+                    <label for="tool-name">工具名称*</label>
+                    <input type="text" id="tool-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tool-url">官网URL*</label>
+                    <input type="url" id="tool-url" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tool-category">分类*</label>
+                    <select id="tool-category" required>
+                        <option value="">选择分类</option>
+                        <option value="tracking">追踪系统</option>
+                        <option value="spy">SPY服务</option>
+                        <!-- 更多选项... -->
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="tool-description">工具描述*</label>
+                    <textarea id="tool-description" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn">提交工具</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <!-- 复用主footer -->
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/form.js"></script>
+</body>
+</html>
